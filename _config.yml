@@ -1,0 +1,4 @@
+coursename: "CS 360"
+baseurl: "/cs360-spring2022"
+markdown: kramdown
+highlighter: rouge
