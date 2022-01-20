@@ -21,7 +21,7 @@ Download and install [Visual Studio 2019](https://visualstudio.microsoft.com) - 
 
 2. Download and install [CLion](https://www.jetbrains.com/clion/) and accept the defaults during the installation process. You should see a screen for the Visual Studio toolchain, be sure to select the AMD64 architecture. **Note:** If Visual Studio is not the default toolchain, use the up arrow above the list until it shows **(default)**.
 
-## Mac OSX (Catalina)
+## Mac OSX (Catalina/Monterey)
 
 ### XCode
 
