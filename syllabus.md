@@ -15,8 +15,8 @@ Office Hours: TBD, or by appointment
 
  Section  | Days |  Time       | Room    | Final Presentations
  -------- | ---- |  ---------- | ------- | ----------
-101       | MWF  | 9:00-9:50   | KEC 124 | Wed, May 11, 8:00-10:00am
-102       | MWF  | 10:00-10:50 | KEC 124 | Mon, May 9, 10:15am-12:15pm
+101       | MWF  | 9:00-9:50   | KEC 119 | Wed, May 11, 8:00-10:00am
+102       | MWF  | 10:00-10:50 | KEC 119 | Mon, May 9, 10:15am-12:15pm
 
 Course Description
 ------------------
