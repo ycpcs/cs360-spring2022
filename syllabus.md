@@ -11,7 +11,7 @@ title: "Syllabus"
 
 Instructor: <a href="http://faculty.ycp.edu/~dbabcock">David Babcock</a>, <dbabcock@ycp.edu>
 
-Office Hours: M 1:30-3pm, T 2-3pm, W 11am-12pm, R 9:30-11am, or by appointment
+Office Hours: M 1:30-3pm, T 2-3pm, W 1:30-2:30pm, R 9:30-11am, or by appointment
 
  Section  | Days |  Time       | Room    | Final Presentations
  -------- | ---- |  ---------- | ------- | ----------
@@ -117,7 +117,7 @@ Several homework assignments will include implementation of various sorting algo
 
 **You must receive a score of 70+ on AT LEAST ONE exam to earn a passing grade for the course.**
 
-Exams will be entirely take-home. You will be allowed to use all the resources from the course including the textbook, lecture notes, example problems/solutions, and homework solutions. All exams will be submitted as **a single .pdf** to Canvas. If you have handwritten solutions, **PLEASE USE A SCANNER APP** to generate the .pdf. **You are responsible for ensuring your submission is legible.**
+Exams will include an in-class portion along with a take-home portion. The in-class portion will be closed book, but you will be allowed to use all the resources from the course including the textbook, lecture notes, example problems/solutions, and homework solutions for the take-home portion. All exams will be submitted as **a single .pdf** to Canvas. If you have handwritten solutions, **PLEASE USE A SCANNER APP** to generate the .pdf. **You are responsible for ensuring your submission is legible.**
 
 **No credit will be given for late or illegible exams.**
 
