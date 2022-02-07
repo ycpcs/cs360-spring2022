@@ -11,7 +11,7 @@ This page links to assignment descriptions.
 
 > Due Date |                Assignment                                | Solutions                                               |
 > -------- | -------------------------------------------------------- | ------------------------------------------------------- |
-> Feb 7    | [Assignment 1](../assign/assign01.html)                  |  |
+> Feb 7    | [Assignment 1](../assign/assign01.html)                  | [Assignment 1 Solutions](../assign/sol/assign01sol.pdf) |
 > Feb 14   | [Assignment 2](../assign/assign02.html)                  |  |
 > Feb 28   | [Assignment 3](../assign/assign03.html)                  |  |
 > Mar 16   | [Empirical Comparison Report](../assign/emp_comp.html)   | **Upload .pdf to Canvas** |
