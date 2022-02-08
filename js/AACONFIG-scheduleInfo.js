@@ -61,15 +61,15 @@ courseInfo.classPeriods = [
 		reading: "Ch. 15",
 	},
 	{
+		topic: new DoubleTopic("Lecture 12: Dynamic Programming - Rod Cutting cont.", "lectures/lecture12.html", "Rod Cutting Example", "handouts/lecture12-rodcutex.pdf"),
+		reading: "Ch. 15",
+	},
+	{
 		topic: new DoubleTopic("Exam 2 Review", "", "Assignment 3 Due", "assign/assign03.html"),
 		reading: "",
 	},
 	{
-		topic: new Topic("** Exam 2 - Takehome Due Mon Mar 7", "")
-	},
-	{
-		topic: new DoubleTopic("Lecture 12: Dynamic Programming - Rod Cutting cont.", "lectures/lecture12.html", "Rod Cutting Example", "handouts/lecture12-rodcutex.pdf"),
-		reading: "Ch. 15",
+		topic: new Topic("** Exam 2 - Takehome Due Mon Mar 14", "")
 	},
 	{
 		topic: new Topic("Empirical Report Workday", ""),
