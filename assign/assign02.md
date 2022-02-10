@@ -20,7 +20,7 @@ Merge sort implementation.
 
 > 2.3-5 - Be sure to give a *recursive* algorithm and the corresponding recursive equation. Then solve the equation via Master theorem.
 >
-> 3-2 - Refer to the properties of logs and exponentials in section 3.2, particularly eq. 3.15, 3.18, and the following properties
+> 3-2 - Refer to the properties of logs and exponentials in section 3.2, particularly eq. 3.16, 3.19, and the following properties
 >
 > *n<sup>b</sup> = o(a<sup>n</sup>)*
 >
