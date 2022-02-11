@@ -3,7 +3,7 @@ layout: default
 title: "Empirical Comparison Report"
 ---
 
-**Wed, March 16th by 11:59pm** Late assignments will be penalized 20% per day.
+**Fri, March 18th by 11:59pm** Late assignments will be penalized 20% per day.
 
 Empirical Sorting Comparison
 ----------------------------
@@ -37,4 +37,4 @@ The report should include *meaningful* plots (e.g. using Excel) of all the data 
 
 **SUMMARIZE** the results by describing under what conditions you would select which sort, i.e. if you were asked to sort a data set, what criteria would you use in making your selection?
 
-**Upload** a .pdf file to Canvas by **Tuesday, March 9 at 11:59pm**
+**Upload** a .pdf file to Canvas by **Friday, March 18 at 11:59pm**

@@ -14,11 +14,15 @@ courseInfo.classPeriods = [
 		reading: "Ch. 2.1&ndash;2.2",
 	},
 	{
-		topic: new DoubleTopic("Lecture 2b: Empirical Analysis", "lectures/lecture02b.html", "Lecture 3: Asymptotic Notation", "lectures/lecture03.html"),
+		topic: new Topic("Lecture 2b: Empirical Analysis", "lectures/lecture02b.html"),
 		reading: "Ch. 3",
 	},
 	{
-		topic: new TripleTopic("Lecture 4: Merge Sort", "lectures/lecture04.html", "Merge Sort Pseudocode", "handouts/lecture04-mergealg.pdf", "Assignment 1 Due", "assign/assign01.html"),
+		topic: new DoubleTopic("Lecture 3: Asymptotic Notation", "lectures/lecture03.html", "Assignment 1 Due", "assign/assign01.html"),
+		reading: "Ch. 3",
+	},
+	{
+		topic: new DoubleTopic("Lecture 4: Merge Sort", "lectures/lecture04.html", "Merge Sort Pseudocode", "handouts/lecture04-mergealg.pdf"),
 		reading: "Ch. 2.3",
 	},
 //	{
@@ -38,7 +42,7 @@ courseInfo.classPeriods = [
 		reading: "",
 	},
 	{
-		topic: new Topic("** Exam 1 - Takehome Due Mon Feb 21", "")
+		topic: new Topic("** Exam 1 - Takehome Due Wed Feb 23", "")
 	},
 	{
 		topic: new DoubleTopic("Lecture 7: Heapsort", "lectures/lecture07.html", "Heap Sort Pseudocode", "handouts/lecture07-heapalg.pdf"),
@@ -61,10 +65,6 @@ courseInfo.classPeriods = [
 		reading: "Ch. 15",
 	},
 	{
-		topic: new DoubleTopic("Lecture 12: Dynamic Programming - Rod Cutting cont.", "lectures/lecture12.html", "Rod Cutting Example", "handouts/lecture12-rodcutex.pdf"),
-		reading: "Ch. 15",
-	},
-	{
 		topic: new DoubleTopic("Exam 2 Review", "", "Assignment 3 Due", "assign/assign03.html"),
 		reading: "",
 	},
@@ -72,8 +72,8 @@ courseInfo.classPeriods = [
 		topic: new Topic("** Exam 2 - Takehome Due Mon Mar 14", "")
 	},
 	{
-		topic: new Topic("Empirical Report Workday", ""),
-		reading: "",
+		topic: new DoubleTopic("Lecture 12: Dynamic Programming - Rod Cutting cont.", "lectures/lecture12.html", "Rod Cutting Example", "handouts/lecture12-rodcutex.pdf"),
+		reading: "Ch. 15",
 	},
 	{
 		topic: new Topic("Empirical Report Workday", ""),
@@ -84,11 +84,11 @@ courseInfo.classPeriods = [
 		reading: "Ch. 15",
 	},
 	{
-		topic: new TripleTopic("LCS Practice Activity", "handouts/lecture13-LCS-Ex2.pdf", "LCS Solution", "handouts/lecture13-LCS-Ex2Sol.pdf", "Empirical Comparison Report Due - Wed Mar 16", "assign/emp_comp.html"),
+		topic: new DoubleTopic("LCS Practice Activity", "handouts/lecture13-LCS-Ex2.pdf", "LCS Solution", "handouts/lecture13-LCS-Ex2Sol.pdf"),
 		reading: "Ch. 15",
 	},
 	{
-		topic: new DoubleTopic("Lecture 14: Greedy Algorithms - Activity Selection", "lectures/lecture14.html", "Activity Selection Example", "handouts/lecture14-actselex.pdf"),
+		topic: new TripleTopic("Lecture 14: Greedy Algorithms - Activity Selection", "lectures/lecture14.html", "Activity Selection Example", "handouts/lecture14-actselex.pdf", "Empirical Comparison Report Due - Fri Mar 18", "assign/emp_comp.html"),
 		reading: "Ch. 16",
 	},
 	{
