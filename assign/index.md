@@ -13,7 +13,7 @@ This page links to assignment descriptions.
 > -------- | -------------------------------------------------------- | ------------------------------------------------------- |
 > Feb 7    | [Assignment 1](../assign/assign01.html)                  | [Assignment 1 Solutions](../assign/sol/assign01sol.pdf) |
 > Feb 16   | [Assignment 2](../assign/assign02.html)                  | [Assignment 2 Solutions](../assign/sol/assign02sol.pdf) |
-> Mar 2   | [Assignment 3](../assign/assign03.html)                  |  |
+> Mar 2   | [Assignment 3](../assign/assign03.html)                   | [Assignment 3 Solutions](../assign/sol/assign03sol.pdf) |
 > Mar 18   | [Empirical Comparison Report](../assign/emp_comp.html)   | **Upload .pdf to Canvas** |
 > Mar 23   | [Assignment 4](../assign/assign04.html)                  |  |
 > Mar 30   | [Assignment 5](../assign/assign05.html)                  |  |
