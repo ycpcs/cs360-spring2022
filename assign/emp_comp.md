@@ -5,13 +5,11 @@ title: "Empirical Comparison Report"
 
 **Fri, March 18th by 11:59pm** Late assignments will be penalized 20% per day.
 
-Empirical Sorting Comparison
-----------------------------
+## Empirical Sorting Comparison
 
 The purpose of this assignment is to compare the various sorting algorithms implemented in assignments 1, 2, and 3.
 
-Submission
-----------
+## Submission
 
 The submission for this assignment should consist of a written report that graphically shows the results for all five sorts and provides a discussion of what was observed. **DO NOT** include your completed source code, but provide tables of numerical data in an appendix at the end of the report.
 
@@ -36,5 +34,20 @@ The report should include *meaningful* plots (e.g. using Excel) of all the data 
 >-   How do the *n lg n* sorts compare to each other for the large element ranges both in terms of runtime and memory usage? 
 
 **SUMMARIZE** the results by describing under what conditions you would select which sort, i.e. if you were asked to sort a data set, what criteria would you use in making your selection?
+
+## Grading
+
+* Behavior based on range - 10%
+* Asymptotic fit for small *n* - 10%
+* Comparison for small range, small *n* - 10%
+* Comparison for large range, small *n* - 10%* 
+* Comparison for small range, large *n* - 10%* 
+* Comparison for large range, large *n* - 10%* 
+* Comparison for n lg n, small range - 5%
+* Comparison for n lg n, large range - 5%
+* Summary - 10%
+* Table of asymptotic constants - 5%
+* Table of empirical data - 3%
+* Writing quality - 12%
 
 **Upload** a .pdf file to Canvas by **Friday, March 18 at 11:59pm**

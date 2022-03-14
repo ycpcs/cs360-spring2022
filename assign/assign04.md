@@ -34,7 +34,7 @@ B.4-1
 >
 > ![image](images/assign06/linecost.png)
 >
-> Let the optimal cost of the first *j* words be *c(j)* and define a recursion that represents the optimality.
+> Let the optimal cost for *n* words be *c(n)* and give a *top-down* recursive formula for *c(n)*. Then show *optimal substructure* for the recursion and give a *bottom-up* implementation.  
 >
 > 16.1-4 - We have discussed the activity scheduling problem for the case of maximizing the number of activities for a *single lecture hall*. Consider how to use this strategy to schedule *each* activity in the *minimum* number of halls. There is a straightforward approach which produces an O(n<sup>2</sup>). Try to find a **better** solution utiizing a stack and priority queue to solve the problem in O(n lg n) time (consider sorting both start *and* finish times). Remember you must *prove* (at least intuitively) that your approach produces an *optimal* solution.
 >
