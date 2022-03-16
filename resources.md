@@ -17,7 +17,7 @@ Download and install [Visual Studio 2019](https://visualstudio.microsoft.com) - 
 
 ### CLion
 
-1.  Create a [JetBrains](https://account.jetbrains.com/login) account with your YCP email to obtain a free license. 
+1.  Create a [JetBrains](https://www.jetbrains.com/community/education/#students) account with your YCP email to obtain a free license. 
 
 2. Download and install [CLion](https://www.jetbrains.com/clion/) and accept the defaults during the installation process. You should see a screen for the Visual Studio toolchain, be sure to select the AMD64 architecture. **Note:** If Visual Studio is not the default toolchain, use the up arrow above the list until it shows **(default)**.
 
@@ -35,7 +35,7 @@ Download and install [Visual Studio 2019](https://visualstudio.microsoft.com) - 
     
 ### CLion
 
-1.  Create a [JetBrains](https://account.jetbrains.com/login) account with your YCP email to obtain a free license. 
+1.  Create a [JetBrains](https://www.jetbrains.com/community/education/#students) account with your YCP email to obtain a free license. 
 
 2. Download and install [CLion](https://www.jetbrains.com/clion/) and accept the defaults during the installation process.
 
@@ -51,7 +51,7 @@ $ sudo apt-get install g++
 	
 ### CLion
 
-1.  Create a [JetBrains](https://account.jetbrains.com/login) account with your YCP email to obtain a free license. 
+1.  Create a [JetBrains](https://www.jetbrains.com/community/education/#students) account with your YCP email to obtain a free license. 
 
 2. Download [CLion](https://www.jetbrains.com/clion/) and follow the [installation instructions](https://www.jetbrains.com/help/clion/installation-guide.html#standalone)  for Linux.
 
