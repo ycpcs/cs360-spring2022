@@ -63,15 +63,21 @@ Case 1 reduces to the *single* subproblem of finding a LCS of *X*<sub>m-1</sub>,
 
 Cases 2 and 3 reduces to *two* subproblems of finding a LCS of *X*<sub>m-1</sub>, *Y* and *X*, *Y*<sub>n-1</sub>and selecting the longer of the two (note both of these subproblems involve also solving the subproblem of Case 1).
 
-Hence if we let *c[i,j]* be the length of a LCS for *X*<sub>i</sub> and *Y*<sub>j</sub> we can write the recursion described by the above cases as
+Hence if we let *c[m,n]* be the length of a LCS for *X* and *Y* we can write the recursion described by the above cases as
 
-> ![image](images/lecture13/lcsrecurse.png)
+> ![image](images/lecture13/lcstop.png)
+
+Since each step of the recursion removes at least one element from one of the sequences, there are only Θ(*mn*) subproblems to consider. Hence we can solve it by creating two tables - *C* an *m* x *n* table storing the LCS lengths and *B* an *m* x *n* table for reconstructing the LCS. 
 
 Note that not all subproblems are considered depending on which recursive branch is selected.
 
 *Step 3: Compute the length of the LCS (bottom-up)*
 
-Since each step of the recursion removes at least one element from one of the sequences, there are only Θ(*mn*) subproblems to consider. Hence we can solve it by creating two tables - *C* an *m* x *n* table storing the LCS lengths and *B* an *m* x *n* table for reconstructing the LCS. When the procedure is complete, the optimal length of the LCS will be stored in *c[m,n]*. Thus since we fill in the entire table, the procedure will take O(*mn*).
+Replacing *m* by *i* and *n* by *j* and noting that *c[i,0] = c[0,j] = 0*, we can rewrite the recursive equation bottom up as follows
+
+> ![image](images/lecture13/lcsbottom.png)
+
+When the procedure is complete, the optimal length of the LCS will be stored in *c[m,n]*. Thus since we fill in the entire table, the procedure will take O(*mn*).
 
 *Step 4: Construct an optimal LCS*
 
