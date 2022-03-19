@@ -52,7 +52,7 @@ Similar to rod cutting, if *A*<sub>0,(n+1)</sub> ≠ ∅, then assume it contain
 
 > ![image](images/lecture14/actset.png)
 
-and letting *c[0,n+1]* be |A<sub>0,n+1</sub>|, i.e. *c* is the maximal number of compatible activities that start *after* *a*<sub>0</sub> and end *before* *a*<sub>n+1</sub>, we can write the previous recursion as
+and letting *c[0,n+1]* be \|A<sub>0,n+1</sub>\|, i.e. *c* is the maximal number of compatible activities that start *after* *a*<sub>0</sub> and end *before* *a*<sub>n+1</sub>, we can write the previous recursion as
 
 > ![image](images/lecture14/actc.png)
 
