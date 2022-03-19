@@ -12,15 +12,15 @@ Activity Selection
 
 Given a set of *activities* *A* of length *n*
 
-> *S* = \<*a*<sub>1</sub>, *a*<sub>2</sub>, ..., *a*<sub>n</sub>\>
+> *A* = \<*a*<sub>1</sub>, *a*<sub>2</sub>, ..., *a*<sub>n</sub>\>
 
 with *starting times*
 
-> <*s*<sub>1</sub>, *s*<sub>2</sub>, ..., *s*<sub>n</sub>\>
+> *S* = \<*s*<sub>1</sub>, *s*<sub>2</sub>, ..., *s*<sub>n</sub>\>
 
 and *finishing times*
 
-> <*f*<sub>1</sub>, *f*<sub>2</sub>, ..., *f*<sub>n</sub>\>
+> *F* = \<*f*<sub>1</sub>, *f*<sub>2</sub>, ..., *f*<sub>n</sub>\>
 
 such that 0 ≤ *s*<sub>i</sub> \< *f*<sub>i</sub> \< ∞, we define two activities *a*<sub>i</sub> and *a*<sub>j</sub> to be *compatible* if
 
@@ -42,33 +42,33 @@ Define the set *S*<sub>ij</sub>
 
 > *S*<sub>ij</sub> = {*a*<sub>k</sub> ∈ *S* : *f*<sub>i</sub> ≤ *s*<sub>k</sub> \< *f*<sub>k</sub> ≤ *s*<sub>j</sub>}
 
-as the subset of activities that can occur between the completion of *a*<sub>i</sub> (*f*<sub>i</sub>) and the start of *a*<sub>j</sub> (*s*<sub>j</sub>). Clearly then *S* = *S*<sub>0,n+1</sub>, i.e. all the activities fit between the boundary activities *a*<sub>0</sub> and *a*<sub>n+1</sub>.
+as the subset of activities that can occur between the completion of *a*<sub>i</sub> (*f*<sub>i</sub>) and the start of *a*<sub>j</sub> (*s*<sub>j</sub>).
 
-Furthermore let *A*<sub>ij</sub> be the *maximal* set of activities for *S*<sub>ij</sub>, thus we wish to find *A*<sub>0,n+1</sub> such that |*A*<sub>0,n+1</sub>| is *maximized*.
+Note that *S*<sub>ij</sub> = ∅ for *i* ≥ *j* since otherwise *f*<sub>i</sub> ≤ *s*<sub>j</sub> \< *f*<sub>j</sub> ⇒ *f*<sub>i</sub> \< *f*<sub>j</sub> which is a contradiction for *i* ≥ *j* by the assumption that the activities are in sorted order.
+
+Furthermore let *A*<sub>ij</sub> be the *maximal* set of activities for *S*<sub>ij</sub>. Using a "cut-and-paste" argument, if *A*<sub>ij</sub> contains activity *a*<sub>k</sub> then we can write
+
+> *A*<sub>ij</sub> = *A*<sub>ik</sub> ∪ {*a*<sub>k</sub>} ∪ *A*<sub>kj</sub>
+
+where *A*<sub>ik</sub> and *A*<sub>kj</sub> must also be optimal (otherwise if we could find subsets with more activities that were still compatible with *a*<sub>k</sub> then it would contradict the assumption that *A*<sub>ij</sub> was optimal).
 
 *Step 2: Define the recursive solution (top-down)*
 
-Similar to rod cutting, if *A*<sub>0,(n+1)</sub> ≠ ∅, then assume it contains activity *a*<sub>k</sub> which will divide the set of activities into ones that all finish *before* *s*<sub>k</sub> and ones that all start *after* *f*<sub>k</sub>. Thus we can write the recursion as 
+Let *c[0,n+1]* = \|*A*<sub>0,n+1</sub>\|, i.e. *c* is the maximal number of compatible activities that start *after* *a*<sub>0</sub> and end *before* *a*<sub>n+1</sub>. Then
 
-> ![image](images/lecture14/actset.png)
-
-and letting *c[0,n+1]* be |A<sub>0,n+1</sub>|, i.e. *c* is the maximal number of compatible activities that start *after* *a*<sub>0</sub> and end *before* *a*<sub>n+1</sub>, we can write the previous recursion as
-
-> ![image](images/lecture14/actc.png)
+> ![image](images/lecture14/actselformula.png)
 
 i.e. compute *c[0,n+1]* for each *k* = 1, ..., n and select the max.
-
-We can show optimal substructure using a "cut-and-paste" argument by assuming that if *c[0,n+1]* is optimal, then *c[0,k]* and *c[k,n+1]* must also be optimal (otherwise if we could find subsets with more activities that were still compatible with *a*<sub>k</sub> then it would contradict the assumption that *c[0,n+1]* was optimal).
 
 *Step 3: Compute the maximal set size (bottom-up)*
 
 Substituting *i* for 0 and *j* for *n+1* gives 
 
-> ![image](images/lecture14/actcdyn.png)
+> ![image](images/lecture14/actselformula2.png)
 
-Note that *S*<sub>ij</sub> = ∅ for *i* ≥ *j* since otherwise *f*<sub>i</sub> ≤ *s*<sub>j</sub> \< *f*<sub>j</sub> ⇒ *f*<sub>i</sub> \< *f*<sub>j</sub> which is a contradiction for *i* ≥ *j* by the assumption that the activities are in sorted order. Thus *c[i,j] = 0* for *i* ≥ *j*.
+with *c[i,j]* = 0 for *i* ≥ *j*.
 
-Hence, construct an *n+2* x *n+2* table (which is upper triangular) that can be done in polynomial time since clearly for each *c[i,j]* we will examine no more than *n* subproblems giving an upper bound on the worst case of O(*n*<sup>3</sup>).
+Hence, construct an *n* x *n* table (which is upper triangular) that can be done in polynomial time since clearly for each *c[i,j]* we will examine no more than *n* subproblems giving an upper bound on the worst case of O(*n*<sup>3</sup>).
 
 **BUT WE DON'T NEED TO DO ALL THAT WORK!** Instead at each step we could simply select (*greedily*) the activity that finishes first and is compatible with the previous activities. Intuitively this choice leaves the most time for other future activities.
 
