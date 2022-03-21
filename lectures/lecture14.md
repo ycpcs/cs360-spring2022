@@ -44,7 +44,7 @@ Define the set *S*<sub>ij</sub>
 
 as the subset of activities that can occur between the completion of *a*<sub>i</sub> (*f*<sub>i</sub>) and the start of *a*<sub>j</sub> (*s*<sub>j</sub>). Clearly then *S* = *S*<sub>0,n+1</sub>, i.e. all the activities fit between the boundary activities *a*<sub>0</sub> and *a*<sub>n+1</sub>.
 
-Furthermore let *A*<sub>ij</sub> be the *maximal* set of activities for *S*<sub>ij</sub>, thus we wish to find *A*<sub>0,n+1</sub> such that |*A*<sub>0,n+1</sub>| is *maximized*.
+Furthermore let *A*<sub>ij</sub> be the *maximal* set of activities for *S*<sub>ij</sub>, thus we wish to find *A*<sub>0,n+1</sub> such that \|*A*<sub>0,n+1</sub>\| is *maximized*.
 
 *Step 2: Define the recursive solution (top-down)*
 
