@@ -35,6 +35,10 @@ Consider the following flow network
 
 > ![image](images/lecture25/MaxFlowexample.png)
 
+Initially we will remove the anti-parallel edges between vertices 1 and 2 by adding an intermediate vertex 1' and edges with the same capacities, i.e. *c*(1,1') = *c*(1',2) = *c*(1,2) = 10.
+
+> ![image](images/lecture25/MaxFlowexampleMod.png)
+
 Note that clearly \|*f* <sup>\*</sup>\| ≤ 24 (the smaller of the capacities leaving the source or entering the sink).
 
 *Iteration 1:* Choose the augmenting path *p*<sub>1</sub> = \< *s*, 1, 3, *t* \> which has *c*<sub>f</sub>(*p*<sub>1</sub>) = 12 (due to *c*(1,3)) giving the residual network
@@ -55,3 +59,20 @@ At this point there are no other augmenting paths (since vertex 3 is the only ve
 
 with maximal flow \|*f* <sup>\*</sup>\| = 19 + 4 = 23 (or 12 + 11 = 23).
 
+**Note** As we admit flow along an edge (*u*,*v*), we create *negative* flow along the reverse edge (*v*,*u*), i.e. the flow provides capacity for that edge.
+
+Consider the following example
+
+> ![image](images/lecture25/MaxFlowBack.png)
+
+Clearly we can see that the max flow is \|*f* <sup>\*</sup>\| = 2 since we could follow paths across the top (*p*<sub>1</sub> = \< *s*, 1, 2, *t* \>) and bottom (*p*<sub>2</sub> = \< *s*, 3, 4, *t* \>) of the graph. 
+
+*Iteration 1:* However, consider the following alternative initial augmenting path *p*<sub>1</sub> = \< *s*, 1, 4, *t* \> (which is valid since it also contains only 3 edges) which has *c*<sub>f</sub>(*p*<sub>1</sub>) = 1 giving the residual network
+
+> ![image](images/lecture25/MaxFlowBack1.png)
+  
+Notice that without the reverse edges, there is no augmenting path from *s* to *t*. However, because admitting flow produces capacity along the reversed edge (*4*, *1*), the residual graph contains augmenting path *p*<sub>2</sub> = \< *s*, 3, 4, 1, 2, *t* \> which also has *c*<sub>f</sub>(*p*<sub>1</sub>) = 1 giving the residual network
+
+> ![image](images/lecture25/MaxFlowBack2.png)
+
+Note this second augmenting path essentially restores the capacity in the original edge (*1*, *4*).
